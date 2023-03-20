@@ -1,0 +1,29 @@
+input {
+    font-weight: 500 !important;
+}
+
+.total-expense {
+    text-shadow: 0 0 10px;
+}
+
+.balance {
+    text-shadow: 0 0 10px;
+}
+
+.saving-amount {
+    text-shadow: 0 0 10px;
+}
+
+.remaining-amount {
+    text-shadow: 0 0 10px;
+}
+
+.heading {
+    text-shadow: 0 0 20px;
+}
+
+@media screen and (max-width:640px) {
+    input {
+        width: 150px;
+    }
+}

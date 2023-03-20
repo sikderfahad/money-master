@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Money - Master</title>
+    <link rel="shortcut icon" href="./assets/images/money-bag.png" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1
+            class="text-[#31A5AC] heading lg:text-5xl md:text-4xl text-3xl font-bold text-center flex justify-center items-center mt-8">
+            Money
+            Master
+            <img class="w-14" src="./assets/images/money-bag.png" alt="">
+        </h1>
+    </header>
+
+    <main>
+        <section class="main grid lg:grid-cols-2 grid-cols-1 gap-14 mt-14 w-11/12 mx-auto">
+            <div class="cols relative ">
+                <img class="rounded-lg shadow-2xl lg:absolute lg:h-[-webkit-fill-available]"
+                    src="./assets/images/dollar-2891817.jpg" alt="">
+            </div>
+            <div class="cols bg-[#F8F8F8] shadow-2xl text-center rounded-lg py-6 px-2">
+                <h1 class="text-2xl font-medium my-6">Income</h1>
+
+                <!-- Income -->
+                <div>
+                    <span class="font-medium text-lg">Income:</span>
+                    <input id="income" class="bg-[#DCDCDC] text-blue-700 border-none outline-none rounded ml-4 mt-5"
+                        type="text">
+                </div>
+
+                <h1 class="text-2xl font-medium my-6">Expenses</h1>
+
+                <!-- Expenses -->
+                <div>
+                    <span class="font-medium text-lg">Food:</span>
+                    <input id="food" class="bg-[#DCDCDC] text-red-700 border-none outline-none rounded ml-4 mt-5"
+                        type="text">
+                </div>
+
+                <div>
+                    <span class="font-medium text-lg">Rent:</span>
+                    <input id="rent" class="bg-[#DCDCDC] text-red-700 border-none outline-none rounded ml-4 mt-5"
+                        type="text">
+                </div>
+
+                <div>
+                    <span class="font-medium text-lg">Clothes:</span>
+                    <input id="cloth" class="bg-[#DCDCDC] text-red-700 border-none outline-none rounded ml-4 mt-5"
+                        type="text">
+                </div>
+
+                <button id="btn-expense" type="button"
+                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-14 py-3 text-center my-6 ">Calculate</button>
+
+                <h1 class="total-expense text-2xl font-medium my-6 text-red-500">Total Expenses: <span
+                        id="total-expense" class="ml-3">00</span></h1>
+
+                <h1 class="balance text-2xl font-medium my-6 text-sky-500">Balance: <span id="balance"
+                        class="ml-3">00</span>
+                </h1>
+
+                <div>
+                    <span class="font-medium text-lg">Save:</span>
+                    <input id="save" class="bg-[#DCDCDC] text-green-700 border-none outline-none rounded mx-4 mt-5"
+                        type="text">
+                    <span class="font-medium text-lg">%</span>
+                    <button id="btn-save" type="button"
+                        class="text-white lg:mt-5 mt-5 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-12 py-3 ml-4 text-center">Save</button>
+
+                </div>
+
+                <h1 class="saving-amount text-2xl font-medium my-6 text-green-500">Saving Amount: <span id="save-amount"
+                        class="ml-3">00</span></h1>
+                <h1 class="remaining-amount text-2xl font-medium my-6 text-orange-500">Remaining Balance: <span
+                        id="remaining-amount" class="ml-3">00</span>
+                </h1>
+
+            </div>
+        </section>
+    </main>
+
+    <br><br><br>
+
+
+
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d30db6726a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
